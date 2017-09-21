@@ -1,0 +1,247 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{DARSHAN VANDRA}
+{ LinkedIn://  \href{https://www.linkedin.com/in/darshan-vandra-47176ba9}{\custombold{Darshan-Vandra}} \\
+\href{mailto:darshanvandralive@gmail.com}{darshanvandralive@gmail.com} | 8200887330, 8000725605
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{L.D. COLLEGE OF ENGINEERING}
+\descript{B.E. with Computer Engineering}
+\location{June 2017 | Ahmedabad, Gujarat \\ CGPA: 7.54}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/Darshan-excellence}{\custombold{Darshan-excellence}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/darshan-vandra-47176ba9}{\custombold{darshan-vandra}} \\
+YouTube://  \href{https://www.youtube.com/channel/UCJ7Pny3uzjD0dqwvX8pMTeA/playlists?view_as=subscriber}{\custombold{Darshan Vandra}} \\
+Cisco://  \href{https://learningnetwork.cisco.com/people/darshanvandralive%40gmail.com}{\custombold{@darshanvandra}} \\
+Quora://  \href{https://www.quora.com/DARSHAN-VANDRA}{\custombold{Darshan-Vandra}} \\
+Netaccad://  \href{https://www.netacad.com/group/landing/edit-user-profile?p_p_id=netacaduserprofile_WAR_netacaduserprofileportlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_netacaduserprofile_WAR_netacaduserprofileportlet_pageName=UserDetails}{\custombold{Darshan-Vandra}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+Computer Network, Operating System \\
+Artificial Intelligence \\
+Machine Learning \\
+Basics of Deep Learning \\
+Data Structure and Programming \\
+Design and Analysis of Algorithm \\
+Theory of Computation (TOC) \\
+DBMS, Compiler Design  \\
+Computer Organization \\
+System Programing \\
+Software Engineering \\
+Distributed Operating System \\
+Web Technology \\ 
+Mobile Computing \\ 
+Internet and Network Security \\
+Unix Tools and Scripting \\
+Data Mining \\ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Rating : 4/5}
+C \textbullet{}   C++ \textbullet{} Java \textbullet{} Python \\
+\location{Rating : 3/5}
+HTML \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+\location{Familiar:}
+Android \textbullet{} Advance Java \textbullet{} MySQL
+
+\subsection{Network Infrastructure and Configration :}
+Routing \textbullet{} Switching \textbullet{} Troubleshooting\\
+Firewall Mgmt \textbullet{} VPN \textbullet{} Fail-Over\\
+WSA \textbullet{} ACS \textbullet{} ISE \textbullet{} IPS \\
+\subsection{Data Analysis and \\ Visualization :}
+
+Pandas\textbullet{}Matplotlib \textbullet{} Seaborn \\
+python-sql \textbullet{} Numpy \\
+\location{ML Toolbox :}Sklearn•NLTK•Keras
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Net Protocol Xpert (Networkers Home)}
+\descript{| CCIE Security Student Trainee }
+\location{ October 2015 - October 2018 | Ahmedabad, Gujarat }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item CCNA R&S + CCNP R&S + CCNA Security + CCNP Security + CCIE Security.\\
+\end{tightemize}
+\location{ Virtual Machines and Security Appliances: }
+\begin{tightemize}\item Cisco ISE(2.1.0), Cisco ACS(5.8.0.32), Cisco WSA(9.2.0), Cisco
+ESA(9.7.1), Cisco WLC(8.0.133), Cisco Firepower MCVA(6.0.1 and/or 6.1), Cisco Firepower NGIPSv(6.0.1), Cisco
+Firepower Threat Defense(6.0.1), Cisco ASAv(9.6.1), FireAMP Private Cloud,
+AnyConnect 4.2, Cisco APICE(1.2) \\
+\end{tightemize}
+
+
+\runsubsection{Excellency Hub}
+\descript{| Founder }
+\location{ October 2015 | Ahmedabad}
+\begin{tightemize}
+\item Excellency Hub is the Group of School and College students, we do study and research on various
+computer subjects, various different Operating Systems and many more new software and also create new
+software and operating systems. Spread awareness about technology in Gov.Primary and  Highschool. \end{tightemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Smart Home Automation System}
+\descript{| IoT based Android App }
+\location{March 2017 | B.E. Final Year Project}
+Using GPS tracking, IOT based with the use of Physical web and Beacon technology.
+Using micro controllers and Opensource Cloud Platforms like IBM Watson and Thingspeak we can remotely control the home appliances. Physical web and Beacon technology are used inside the home to automatically control home appliances.
+
+\runsubsection{Quora Question Similarity}
+\descript{| \href{https://github.com/Darshan-excellence/Quora_Question_Pairsr}{\custombold{github link}} }
+\location{September 2017 | Kaggle}
+Detect duplicate Questions on Quora using word-based comparison. Feature Engineering and Complex word embedding features were used in combination with tf-idf like Word2Vec , GloVe , SVD(Singluar value decomposition) and a series of Linear and non-linear classifiers like RBF SVM, Linear Regression , Linear SVM , XG Boost. A highest accuracy of 0.82 was obtained on the train-test cross validated set .
+
+\runsubsection{SENTIMENT ANALYSIS OF AMAZON FINE FOOD REVIEWS}
+\descript{}
+\location{August 2017 | Kaggle}
+Various vectorizer techniques like Tf-idf and Bag of words along with word
+embedding algorithms like Word2Vec and GloVe were used for featurization of
+customer reviews. The featurized dataset was then trained over various ML
+algorithms like Logistic regression, Linear SVM, RBF SVM and XGBoost and an
+accuracy of 0.92 was obtained on for positive vs negative sentiment classification.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications} 
+\begin{tabular}{lr}
+\textbullet{} RHCSA : Redhat Certified System Administration & 24th April, 2015\\
+\textbullet{} CompTIA Network+	& 10th December,2015 \\
+\textbullet{} EC|CSCU : EC-Council Certified Secure Computer User	 & 24th November,2014   \\
+\textbullet{} CompTIA IT Fundamentals	 & February, 2015   \\
+\textbullet{} C|EH : Certified Ethical Hacking By EC-Council & December 2018\\
+\textbullet{} RHCE : RedHat Certified Engineer & November 2018\\
+\textbullet{} CCIE - Security : Cisco Certified Internetwork Expert – Security & December 2018\\
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Co-Curricular Activities} 
+
+\begin{tabular}{l}
+\textbullet{} Founder of Excellency Hub and Member of LDCE FOSS club \\
+\textbullet{} NSS – National Service Scheme Volunteer (2013 – 2015)\\
+\textbullet{} Instructor at INVINCIBLE NGO (Adventure and Nature awareness Camping)\\
+\textbullet{} Zonal and Inter Zonal Winner of Advertise Making Competition in XITIJ-2015-16\\
+\end{tabular}
+\end{minipage} 
+\end{document}
